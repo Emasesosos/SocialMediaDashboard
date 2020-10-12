@@ -1,13 +1,16 @@
 import React from 'react';
-import { Followers } from './components/Followers';
-import { Overview } from './components/Overview';
+import { Navbar } from './components/Navbar/Navbar';
+import { Followers } from './components/Followers/Followers';
+import { Overview } from './components/Overview/Overview';
 
 export const SocialMediaDash = () => {
+
     return (
         <div className="container">
-            <h1>SocialMediaDash</h1>
+            <Navbar />
             <Followers />
             <Overview />
         </div>
     );
+
 };
