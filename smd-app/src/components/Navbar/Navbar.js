@@ -4,7 +4,6 @@ export const Navbar = () => {
 
     return (
         <div className="navbar">
-            <h1>Navbar</h1>
             <h1>Social Media Dashboard</h1>
             <p>Total Followers: 23,004</p>
             <hr/>

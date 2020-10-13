@@ -1,0 +1,43 @@
+.social-network {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    .img-user {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        width: 100%;
+    }
+    .follows {
+        padding: 10px;
+    }
+    .status {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+    }
+}
+
+.social-network {
+    &.face {
+        // border-bottom: solid 1px gray;
+        // border-left: solid 1px gray;
+        // border-right: solid 1px gray;
+        border: solid 2px blue;
+    }
+}
+
+.social-network {
+    &.insta {
+        // border-bottom: solid 1px gray;
+        // border-left: solid 1px gray;
+        // border-right: solid 1px gray;
+        border: solid 2px green;
+    }
+}
+

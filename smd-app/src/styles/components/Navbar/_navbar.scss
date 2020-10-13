@@ -1,0 +1,26 @@
+.navbar {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0;
+    text-align: center;
+    h1 {
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    p {
+        margin-bottom: 5px;
+    }
+    hr {
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .toggle {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
