@@ -1,43 +1,89 @@
+.social-network-card {}
+
 .social-network {
     align-items: center;
+    background-color: $Light-Grayish-Blue;
+    border-top-right-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 15px;
     padding: 10px;
+    p {
+        font-size: 14px;
+    }
     .img-user {
         align-items: center;
         display: flex;
-        justify-content: space-between;
-        padding: 10px;
+        justify-content: center;
+        margin: 15px;
         width: 100%;
+        img {
+            margin-right: 4px;
+        }
+        p {
+            color: $Very-Dark-Blue;
+            font-weight: 700;
+            margin-left: 4px;
+        }
     }
     .follows {
-        padding: 10px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            color: $Dark-Grayish-Blue;
+            letter-spacing: 3px;
+        }
     }
     .status {
         align-items: center;
         display: flex;
         justify-content: center;
+        margin: 15px;
         padding: 5px;
+        img {
+            margin-right: 5px;
+        }
     }
 }
 
-.social-network {
-    &.face {
-        // border-bottom: solid 1px gray;
-        // border-left: solid 1px gray;
-        // border-right: solid 1px gray;
-        border: solid 2px blue;
+.follower-card {
+    &.facebook {
+        background-color: $Facebook;
+        border-radius: 5px;
     }
 }
 
-.social-network {
-    &.insta {
-        // border-bottom: solid 1px gray;
-        // border-left: solid 1px gray;
-        // border-right: solid 1px gray;
-        border: solid 2px green;
+.follower-card {
+    &.twitter {
+        background-color: $Twitter;
+        border-radius: 5px;
     }
 }
 
+.follower-card {
+    &.instagram {
+        background-image: $Instagram;
+        border-radius: 5px;
+    }
+}
+
+.follower-card {
+    &.youtube {
+        background-color: $YouTube;
+        border-radius: 5px;
+    }
+}
+
+.up {
+    color: $Lime-Green;
+}
+
+.down {
+    color: $Bright-Red;
+}
