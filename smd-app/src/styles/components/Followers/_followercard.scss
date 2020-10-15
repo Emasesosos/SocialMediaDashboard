@@ -1,9 +1,7 @@
-.social-network-card {}
-
 .social-network {
     align-items: center;
     background-color: $Light-Grayish-Blue;
-    border-top-right-radius: 10px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,31 +50,28 @@
     }
 }
 
-.follower-card {
+.social-network {
     &.facebook {
-        background-color: $Facebook;
-        border-radius: 5px;
+        border-top: solid 4px $Facebook;
     }
 }
 
-.follower-card {
+.social-network {
     &.twitter {
-        background-color: $Twitter;
-        border-radius: 5px;
+        border-top: solid 4px $Twitter;
     }
 }
 
-.follower-card {
+.social-network {
     &.instagram {
-        background-image: $Instagram;
         border-radius: 5px;
+        background-image: $Instagram;
     }
 }
 
-.follower-card {
+.social-network {
     &.youtube {
-        background-color: $YouTube;
-        border-radius: 5px;
+        border-top: solid 4px $YouTube;
     }
 }
 

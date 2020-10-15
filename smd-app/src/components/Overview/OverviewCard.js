@@ -8,16 +8,19 @@ export const OverviewCard = () => {
 
     return (
         <div className="overview-card">
+            <div className="overview-title">
+                <h2>Overview - Today</h2>
+            </div>
             <div className="info">
                 <div className="info-header">
                     <p>Page Views</p>
                     <img src={ face } alt=""/>
                 </div>
                 <div className="info-network">
-                    <p>87</p>
+                    <h1>87</h1>
                     <div className="info-porcent">
                         <img src={ up } alt=""/>
-                        <p>2%</p>
+                        <p>3%</p>
                     </div>
                 </div>
             </div>
@@ -27,7 +30,7 @@ export const OverviewCard = () => {
                     <img src={ face } alt=""/>
                 </div>
                 <div className="info-network">
-                    <p>52</p>
+                    <h1>52</h1>
                     <div className="info-porcent">
                         <img src={ down } alt=""/>
                         <p>2%</p>
@@ -41,7 +44,7 @@ export const OverviewCard = () => {
                     <img src={ insta } alt=""/>
                 </div>
                 <div className="info-network">
-                    <p>5462</p>
+                    <h1>5462</h1>
                     <div className="info-porcent">
                         <img src={ up } alt=""/>
                         <p>2257%</p>
@@ -54,9 +57,9 @@ export const OverviewCard = () => {
                     <img src={ insta } alt=""/>
                 </div>
                 <div className="info-network">
-                    <p>52</p>
+                    <h1>52k</h1>
                     <div className="info-porcent">
-                        <img src={ down } alt=""/>
+                        <img src={ up } alt=""/>
                         <p>1375%</p>
                     </div>
                 </div>

@@ -12,9 +12,9 @@ export const FollowerCard = ({infoUser}) => {
     const todayClass = status.index === 'up' ? 'up' : 'down';
 
     return (
-        <div className={`follower-card ${network}`}>
+        <div className="follower-card">
 
-            <div className="social-network">
+            <div className={`social-network ${network}`}>
                 <div className="img-user">
                     <img 
                         src={
@@ -50,12 +50,7 @@ export const FollowerCard = ({infoUser}) => {
                     <p className={`${todayClass}`}>{status.today} Today</p>
                 </div>
             </div>
-            <div className="uno">
-                <div className="dos">
-                    <div className="tres">
-                    </div>
-                </div>
-            </div>
+            
         
         </div>
     );
