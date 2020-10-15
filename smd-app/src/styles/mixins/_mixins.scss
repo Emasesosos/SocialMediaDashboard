@@ -1,17 +1,17 @@
 @mixin telefono {
-    @media only screen and (min-width: #{$telefono}) {
+    @media only screen and (min-width: #{$Mobile}) {
         @content;
     }
 }
 
 @mixin tablet {
-    @media only screen and (min-width: #{$tablet}) {
+    @media only screen and (min-width: #{$Tablet}) {
         @content;
     }
 }
 
 @mixin desktop {
-    @media only screen and (min-width: #{$desktop}) {
+    @media only screen and (min-width: #{$Desktop}) {
         @content;
     }
 }
