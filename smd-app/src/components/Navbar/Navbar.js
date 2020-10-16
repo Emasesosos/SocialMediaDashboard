@@ -12,7 +12,9 @@ export const Navbar = () => {
                 <h2>Social Media Dashboard</h2>
                 <p>Total Followers: 23,004</p>
             </div>
-            <hr/>
+            <div className="separador">
+                <hr/>
+            </div>
             <div className="toggle">
                 <p>Dark Mode</p>
                 <label className="switch">

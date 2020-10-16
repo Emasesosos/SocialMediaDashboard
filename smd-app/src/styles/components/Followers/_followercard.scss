@@ -1,53 +1,93 @@
-// .social-network {
-//     align-items: center;
-//     background-color: $Light-Grayish-Blue;
-//     border-radius: 5px;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     margin-bottom: 15px;
-//     padding: 10px;
-//     p {
-//         font-size: 14px;
-//     }
-//     .img-user {
-//         align-items: center;
-//         display: flex;
-//         justify-content: center;
-//         margin: 15px;
-//         width: 100%;
-//         img {
-//             margin-right: 4px;
-//         }
-//         p {
-//             color: $Very-Dark-Blue;
-//             font-weight: 700;
-//             margin-left: 4px;
-//         }
-//     }
-//     .follows {
-//         align-items: center;
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         h1 {
-//             font-size: 50px;
-//         }
-//         p {
-//             color: $Dark-Grayish-Blue;
-//             letter-spacing: 3px;
-//         }
-//     }
-//     .status {
-//         align-items: center;
-//         display: flex;
-//         justify-content: center;
-//         margin: 15px;
-//         padding: 5px;
-//         img {
-//             margin-right: 5px;
-//         }
-//     }
-// }
+.social-network {
+    align-items: center;
+    background-color: $Light-Grayish-Blue;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    margin-bottom: 15px;
+    transition: background-color .4s ease;
+    width: 300px;
+    &:hover {
+        background-color: $Very-Pale-Blue;
+        cursor: pointer;
+    }
+    .img-user {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        width: 300px;
+        img {
+            margin-right: 4px;
+        }
+        p {
+            color: $Very-Dark-Blue;
+            font-weight: 700;
+            margin-left: 4px;
+        }
+    }
+    .follows {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            color: $Dark-Grayish-Blue;
+            letter-spacing: 3px;
+        }
+    }
+    .status {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 15px;
+        padding: 5px;
+        img {
+            margin-right: 5px;
+        }
+    }
+}
 
+@media only screen and (min-width: 568px) {
+    .social-network {
+        width: 250px;
+    }
+}
 
+.social-network {
+    &.facebook {
+        border-top: solid 4px $Facebook;
+    }
+}
+
+.social-network {
+    &.twitter {
+        border-top: solid 4px $Twitter;
+    }
+}
+
+.social-network {
+    &.instagram {
+        border-radius: 5px;
+        background-image: $Instagram;
+    }
+}
+
+.social-network {
+    &.youtube {
+        border-top: solid 4px $YouTube;
+    }
+}
+
+.up {
+    color: $Lime-Green;
+}
+
+.down {
+    color: $Bright-Red;
+}

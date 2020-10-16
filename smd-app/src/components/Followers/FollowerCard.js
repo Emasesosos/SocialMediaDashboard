@@ -12,47 +12,42 @@ export const FollowerCard = ({infoUser}) => {
     const todayClass = status.index === 'up' ? 'up' : 'down';
 
     return (
-        <div className="follower-card">
-
-            <div className={`social-network ${network}`}>
-                <div className="img-user">
-                    <img 
-                        src={
-                            network === 'facebook' ? 
-                                fb : network === 'instagram' ? 
-                                    ig : network === 'twitter' ?
-                                        twr : network === 'youtube' ?
-                                            yt : ''
-                        } 
-                        alt={
-                            network === 'facebook' ? 
-                                'facebook' : network === 'instagram' ? 
-                                    'instagram' : network === 'twitter' ?
-                                        'twitter' : network === 'youtube' ?
-                                            'youtube' : ''
-                        }
-                    />
-                    <p>{user}</p>
-                </div>
-                <div className="follows">
-                    <h1>{status.followersOrSubs}</h1>
-                    <p>FOLLOWERS</p>
-                </div>
-                <div className="status">
-                    <img 
-                        src={
-                            status.index === 'up' ? up : down
-                        } 
-                        alt={
-                            status.index === 'up' ? 'up' : 'down'
-                        } 
-                    />
-                    <p className={`${todayClass}`}>{status.today} Today</p>
-                </div>
+        <div className={`social-network ${network}`}>
+            <div className="img-user">
+                <img 
+                    src={
+                        network === 'facebook' ? 
+                            fb : network === 'instagram' ? 
+                                ig : network === 'twitter' ?
+                                    twr : network === 'youtube' ?
+                                        yt : ''
+                    } 
+                    alt={
+                        network === 'facebook' ? 
+                            'facebook' : network === 'instagram' ? 
+                                'instagram' : network === 'twitter' ?
+                                    'twitter' : network === 'youtube' ?
+                                        'youtube' : ''
+                    }
+                />
+                <p>{user}</p>
             </div>
-            
-        
-        </div>
+            <div className="follows">
+                <h1>{status.followersOrSubs}</h1>
+                <p>FOLLOWERS</p>
+            </div>
+            <div className="status">
+                <img 
+                    src={
+                        status.index === 'up' ? up : down
+                    } 
+                    alt={
+                        status.index === 'up' ? 'up' : 'down'
+                    } 
+                />
+                <p className={`${todayClass}`}>{status.today} Today</p>
+            </div>
+        </div>    
     );
 
 };

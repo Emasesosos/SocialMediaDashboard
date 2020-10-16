@@ -5,6 +5,7 @@ import { FollowerCard } from './FollowerCard';
 export const Followers = () => {
 
     return (
+        
         <div className="followers">
             {
                 socialNetworks.map(infoUser => {
@@ -15,6 +16,7 @@ export const Followers = () => {
                 })
             }
         </div>
+        
     );
 
 };

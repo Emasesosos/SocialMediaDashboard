@@ -1,3 +1,24 @@
-// .followers {
-//     width: 300px;
-// }
+.followers {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+}
+
+@media only screen and (min-width: 568px) {
+    .followers {
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: $Tablet) {
+    .followers {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width: $Desktop) {
+    .followers {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
