@@ -1,45 +1,42 @@
-// .overview-card {
-//     font-size: 14px;
-//     margin: 25px 0;
-//     .overview-title {
-//         color: $Dark-Grayish-Blue;
-//         margin: 20px 0;
-//     }
-// }
+.info {
+    background-color: $Light-Grayish-Blue;
+    border-radius: 5px;
+    font-weight: 700;
+    height: 115px;
+    margin: 10px 0;
+    transition: background-color .2s ease;
+    &:hover {
+        background-color: $Very-Pale-Blue;
+        cursor: pointer;
+    }
+    .info-header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 25px;
+        p {
+            color: $Dark-Grayish-Blue;
+        }
+    }
+    .info-network {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 25px;
+        .info-porcent {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            margin-left: 10px;
+            img {
+                margin-right: 3px;
+            }
+        }
+    }
+}
 
-// .info {
-//     background-color: $Light-Grayish-Blue;
-//     border-radius: 5px;
-//     font-weight: 700;
-//     height: 115px;
-//     margin: 18px 0;
-//     //margin: 18px 0;
-//     .info-header {
-//         align-items: center;
-//         display: flex;
-//         justify-content: space-between;
-//         height: 50%;
-//         padding: 0 30px;
-//         p {
-//             color: $Dark-Grayish-Blue;
-//         }
-//     }
-//     .info-network {
-//         align-items: flex-start;
-//         display: flex;
-//         justify-content: space-between;
-//         height: 50%;
-//         padding: 0 30px;
-//         .info-porcent {
-//             img {
-//                 margin-right: 2px;
-//             }
-//             align-items: center;
-//             display: flex;
-//             height: 70%;
-//             justify-self: center;
-//             color: $Lime-Green;
-//             font-weight: 700;
-//         }
-//     }
-// }
+@media only screen and (min-width: 568px) {
+    .info{
+        width: 250px;
+    }
+}

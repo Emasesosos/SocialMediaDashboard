@@ -12,43 +12,43 @@ export const OverviewCard = ({ overview }) => {
     const todayClass = status === 'up' ? 'up' : 'down';
 
     return (
-        <div className="overview-card">
-            <div className="info">
-                <div className="info-header">
-                    <p>{ type }</p>
+       
+        <div className="info">
+            <div className="info-header">
+                <p>{ type }</p>
+                <img 
+                    src={
+                        network === 'facebook' ? 
+                            fb : network === 'instagram' ? 
+                                ig : network === 'twitter' ?
+                                    twr : network === 'youtube' ?
+                                        yt : ''
+                    } 
+                    alt={
+                        network === 'facebook' ? 
+                            'facebook' : network === 'instagram' ? 
+                                'instagram' : network === 'twitter' ?
+                                    'twitter' : network === 'youtube' ?
+                                        'youtube' : ''
+                    }
+                />
+            </div>
+            <div className="info-network">
+                <h1>{ views }</h1>
+                <div className="info-porcent">
                     <img 
                         src={
-                            network === 'facebook' ? 
-                                fb : network === 'instagram' ? 
-                                    ig : network === 'twitter' ?
-                                        twr : network === 'youtube' ?
-                                            yt : ''
+                            status === 'up' ? up : down
                         } 
                         alt={
-                            network === 'facebook' ? 
-                                'facebook' : network === 'instagram' ? 
-                                    'instagram' : network === 'twitter' ?
-                                        'twitter' : network === 'youtube' ?
-                                            'youtube' : ''
-                        }
+                            status === 'up' ? 'up' : 'down'
+                        } 
                     />
-                </div>
-                <div className="info-network">
-                    <h1>{ views }</h1>
-                    <div className="info-porcent">
-                        <img 
-                            src={
-                                status === 'up' ? up : down
-                            } 
-                            alt={
-                                status === 'up' ? 'up' : 'down'
-                            } 
-                        />
-                        <p className={`${todayClass}`}>{ percent }% </p>
-                    </div>
+                    <p className={`${todayClass}`}>{ percent }% </p>
                 </div>
             </div>
         </div>
+       
     );
 
 };

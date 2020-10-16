@@ -1,3 +1,33 @@
-// .overview {
-//     width: 300px;
-// }
+.overview {
+    margin-top: 20px;
+}
+
+.overview-title {
+    color: $Dark-Grayish-Blue;
+    margin-bottom: 12px;
+    width: 300px;
+}
+
+.overview-card {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 568px) {
+    .overview-card {
+        grid-gap: 0 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: $Tablet) {
+    .overview-card {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width: $Desktop) {
+    .overview-card {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

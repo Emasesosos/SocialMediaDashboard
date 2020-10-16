@@ -9,14 +9,16 @@ export const Overview = () => {
             <div className="overview-title">
                 <h2>Overview - Today</h2>
             </div>
-            {
-                overviewToday.map(overview => {
-                    return <OverviewCard 
-                                key={overview.id}
-                                overview={overview}
-                            />
-                })
-            } 
+            <div className="overview-card">
+                {
+                    overviewToday.map(overview => {
+                        return <OverviewCard 
+                                    key={overview.id}
+                                    overview={overview}
+                                />
+                    })
+                } 
+            </div>
         </div>
     );
     

@@ -1,6 +1,6 @@
 .navbar {
     margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
     width: 300px;
     p {
         color: $Dark-Grayish-Blue;
@@ -23,7 +23,7 @@
         align-items: center;
         display: flex;
         justify-content: space-between;
-        width: 80%;
+        width: 90%;
         .separador {
             display: none;
         }
@@ -35,6 +35,11 @@
     }
 }
 
+@media only screen and (min-width: $Desktop) {
+    .navbar {
+        width: 100%;
+    }
+}
 
 
 
