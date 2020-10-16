@@ -1,10 +1,7 @@
 import React from 'react';
+import { Toggle } from './Toggle';
 
-export const Navbar = () => {
-
-    const handleToggle = () => {
-        console.log('handleToggle');
-    };
+export const Navbar = ({ toggleTheme }) => {
 
     return (
         <div className="navbar">
@@ -15,16 +12,9 @@ export const Navbar = () => {
             <div className="separador">
                 <hr/>
             </div>
-            <div className="toggle">
-                <p>Dark Mode</p>
-                <label className="switch">
-                    <input 
-                        type="checkbox" 
-                        onChange={handleToggle}
-                    />
-                    <span className="slider round black"></span>
-                </label>
-            </div>
+            <Toggle 
+                toggleTheme={ toggleTheme }
+            />
         </div>
     );
     
