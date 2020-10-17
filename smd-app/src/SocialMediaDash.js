@@ -9,23 +9,24 @@ import { Overview } from './components/Overview/Overview';
 
 export const SocialMediaDash = () => {
 
-    const [theme, setTheme] = useState('light');
+    const [theme, setTheme] = useState('Light');
 
     const toggleTheme = () => {
 
-        if(theme === 'light') {
-            setTheme('dark');
+        if(theme === 'Light') {
+            setTheme('Dark');
         } else {
-            setTheme('light');
+            setTheme('Light');
         }
 
     };
 
     return (
-        <ThemeProvider theme={ theme === 'light' ? lightTheme : darkTheme }>
+        <ThemeProvider theme={ theme === 'Light' ? lightTheme : darkTheme }>
             <GlobalStyles />
             <div className="container">
                 <Navbar 
+                    theme={ theme }
                     toggleTheme={ toggleTheme }
                 />
                 <Followers />

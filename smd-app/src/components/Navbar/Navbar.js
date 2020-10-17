@@ -1,7 +1,7 @@
 import React from 'react';
 import { Toggle } from './Toggle';
 
-export const Navbar = ({ toggleTheme }) => {
+export const Navbar = ({ theme, toggleTheme }) => {
 
     return (
         <div className="navbar">
@@ -13,6 +13,7 @@ export const Navbar = ({ toggleTheme }) => {
                 <hr/>
             </div>
             <Toggle 
+                theme={ theme }
                 toggleTheme={ toggleTheme }
             />
         </div>

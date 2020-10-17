@@ -1,16 +1,18 @@
+.follower-card {
+    margin-bottom: 25px;
+}
+
 .social-network {
     align-items: center;
     background-color: $Light-Grayish-Blue;
-    border-radius: 5px;
     display: flex;
     flex-direction: column;
     height: 200px;
     justify-content: center;
-    margin-bottom: 18px;
     transition: background-color .2s ease;
     width: 300px;
     &:hover {
-        background-color: $Very-Pale-Blue;
+        background-color: hsl(232, 33%, 91%);
         cursor: pointer;
     }
     .img-user {
@@ -23,7 +25,7 @@
             margin-right: 4px;
         }
         p {
-            color: $Very-Dark-Blue;
+            color: $Dark-Grayish-Blue;
             font-weight: 700;
             margin-left: 4px;
         }
@@ -60,28 +62,43 @@
     }
 }
 
-.social-network {
+.follower-card {
     &.facebook {
-        border-top: solid 4px $Facebook;
-    }
-}
-
-.social-network {
-    &.twitter {
-        border-top: solid 4px $Twitter;
-    }
-}
-
-.social-network {
-    &.instagram {
+        background: $Facebook;
         border-radius: 5px;
-        background: $Instagram;
+        height: 200px;
+        padding-top: 4px;
+        position: relative;
     }
 }
 
-.social-network {
+.follower-card {
+    &.twitter {
+        background: $Twitter;
+        border-radius: 5px;
+        height: 200px;
+        padding-top: 4px;
+        position: relative;
+    }
+}
+
+.follower-card {
+    &.instagram {
+        background: $Instagram;
+        border-radius: 5px;
+        height: 200px;
+        padding-top: 4px;
+        position: relative;
+    }
+}
+
+.follower-card {
     &.youtube {
-        border-top: solid 4px $YouTube;
+        background: $YouTube;
+        border-radius: 5px;
+        height: 200px;
+        padding-top: 4px;
+        position: relative;
     }
 }
 

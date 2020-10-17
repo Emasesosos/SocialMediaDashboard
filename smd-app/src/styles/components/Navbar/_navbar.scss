@@ -39,7 +39,13 @@
     .navbar {
         width: 100%;
     }
+    .navbar-title {
+        h2 {
+            font-size: 1.7rem;
+        }
+    }
 }
+
 
 /* The switch - the box around the slider */
 
@@ -50,6 +56,7 @@
     height: 25px;
 }
 
+
 /* Hide default HTML checkbox */
 
 .switch input {
@@ -57,6 +64,8 @@
     width: 0;
     height: 0;
 }
+
+
 /* The slider */
 
 .slider {
@@ -83,8 +92,6 @@
     transition: .4s;
 }
 
-
-
 input:checked+.slider {
     background-image: $Toggle-DM;
 }
@@ -94,6 +101,7 @@ input:checked+.slider:before {
     -ms-transform: translateX(-22px);
     transform: translateX(-22px);
 }
+
 
 /* Rounded sliders */
 

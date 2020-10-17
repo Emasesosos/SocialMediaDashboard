@@ -12,7 +12,7 @@ export const OverviewCard = ({ overview }) => {
     const todayClass = status === 'up' ? 'up' : 'down';
 
     return (
-       
+    
         <div className="info">
             <div className="info-header">
                 <p>{ type }</p>
@@ -48,7 +48,7 @@ export const OverviewCard = ({ overview }) => {
                 </div>
             </div>
         </div>
-       
+    
     );
 
 };

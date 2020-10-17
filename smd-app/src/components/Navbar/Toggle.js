@@ -1,10 +1,10 @@
 import React from 'react';
 
-export const Toggle = ({ toggleTheme }) => {
+export const Toggle = ({ theme, toggleTheme }) => {
 
     return (
         <div className="toggle">
-            <p>Dark Mode</p>
+            <p>{theme === 'Light' ? 'Dark' : 'Light'} Mode</p>
             <label className="switch">
                 <input 
                     type="checkbox" 
