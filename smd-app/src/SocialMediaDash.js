@@ -1,6 +1,6 @@
 import React from 'react';
-import { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
+import { useDarkMode } from './hooks/useDarkMode';
 import { lightTheme, darkTheme } from './theme/theme';
 import { GlobalStyles } from './theme/global';
 import { Navbar } from './components/Navbar/Navbar';
@@ -9,20 +9,15 @@ import { Overview } from './components/Overview/Overview';
 
 export const SocialMediaDash = () => {
 
-    const [theme, setTheme] = useState('Light');
+    const [theme, toggleTheme, componentMounted] = useDarkMode();
+    const themeMode = theme === 'Light' ? lightTheme : darkTheme;
 
-    const toggleTheme = () => {
-
-        if(theme === 'Light') {
-            setTheme('Dark');
-        } else {
-            setTheme('Light');
-        }
-
+    if (!componentMounted) {
+        return <div />
     };
 
     return (
-        <ThemeProvider theme={ theme === 'Light' ? lightTheme : darkTheme }>
+        <ThemeProvider theme={ themeMode }>
             <GlobalStyles />
             <div className="container">
                 <Navbar 

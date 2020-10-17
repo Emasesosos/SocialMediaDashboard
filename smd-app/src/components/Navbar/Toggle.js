@@ -1,4 +1,5 @@
 import React from 'react';
+import { func, string } from 'prop-types';
 
 export const Toggle = ({ theme, toggleTheme }) => {
 
@@ -14,4 +15,10 @@ export const Toggle = ({ theme, toggleTheme }) => {
             </label>
         </div>
     );
+    
+};
+
+Toggle.propTypes = {
+    theme: string.isRequired,
+    toggleTheme: func.isRequired
 };
