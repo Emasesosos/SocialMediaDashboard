@@ -4,6 +4,7 @@ export const socialNetworks = [{
         status: {
             index: 'up',
             today: 12,
+            type: "followers",
             followersOrSubs: '1987'
         }
     },
@@ -13,6 +14,7 @@ export const socialNetworks = [{
         status: {
             index: 'up',
             today: 99,
+            type: "followers",
             followersOrSubs: '1044'
         }
     },
@@ -22,6 +24,7 @@ export const socialNetworks = [{
         status: {
             index: 'up',
             today: 1099,
+            type: "followers",
             followersOrSubs: '11k'
         }
     },
@@ -31,13 +34,13 @@ export const socialNetworks = [{
         status: {
             index: 'down',
             today: 144,
+            type: "subscribers",
             followersOrSubs: '8239'
         }
     },
 ];
 
-export const overviewToday = [
-    {
+export const overviewToday = [{
         id: 1,
         network: 'facebook',
         type: 'Page Views',
