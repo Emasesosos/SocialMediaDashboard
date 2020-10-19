@@ -2,9 +2,13 @@
 const express = require('express');
 require('dotenv').config();
 const cors = require('cors');
+const { dbConnection } = require('./database/config');
 
 // Crear el servidor de express
 const app = express();
+
+// Base de Datos
+dbConnection();
 
 // CORS
 app.use(cors());
@@ -15,13 +19,7 @@ app.use(express.static('public'));
 app.use(express.json());
 
 // Rutas
-app.get('/', (req, res) => {
-
-    res.json({
-        ok: true
-    });
-
-});
+app.use('/api/user', require('./routes/user'));
 
 // Escuchar Peticiones
 app.listen(process.env.PORT, () => {
