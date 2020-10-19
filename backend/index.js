@@ -19,7 +19,8 @@ app.use(express.static('public'));
 app.use(express.json());
 
 // Rutas
-app.use('/api/user', require('./routes/user'));
+app.use('/api/user', require('./routes/user'));  // Información Usuario
+app.use('/api/card', require('./routes/card'));  // Información Tarjeta
 
 // Escuchar Peticiones
 app.listen(process.env.PORT, () => {
