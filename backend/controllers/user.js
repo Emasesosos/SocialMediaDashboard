@@ -29,15 +29,15 @@ const crearInfoUsuario = async(req, res = response) => {
 
 };
 
-// Obtener Eventos
+// Obtener Info Usuarios
 const getInfoUsuario = async(req, res = response) => {
 
-    const infouUsuarios = await InfoUsuario.find();
+    const infoUsuarios = await InfoUsuario.find();
         //.populate('user', 'name');
 
     res.status(201).json({
         ok: true,
-        infouUsuarios
+        infoUsuarios
     });
 
 };

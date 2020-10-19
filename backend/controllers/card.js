@@ -29,6 +29,20 @@ const crearInfoTarjeta = async(req, res = response) => {
 
 };
 
+// Obtener Info Usuarios
+const getInfoCard = async(req, res = response) => {
+
+    const infoCards = await InfoCard.find();
+        //.populate('user', 'name');
+
+    res.status(201).json({
+        ok: true,
+        infoCards
+    });
+
+};
+
 module.exports = {
-    crearInfoTarjeta
+    crearInfoTarjeta,
+    getInfoCard
 };
