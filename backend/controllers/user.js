@@ -29,6 +29,20 @@ const crearInfoUsuario = async(req, res = response) => {
 
 };
 
+// Obtener Eventos
+const getInfoUsuario = async(req, res = response) => {
+
+    const infouUsuarios = await InfoUsuario.find();
+        //.populate('user', 'name');
+
+    res.status(201).json({
+        ok: true,
+        infouUsuarios
+    });
+
+};
+
 module.exports = {
-    crearInfoUsuario
+    crearInfoUsuario,
+    getInfoUsuario
 };
