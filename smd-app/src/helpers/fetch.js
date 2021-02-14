@@ -1,4 +1,5 @@
-const baseUrl = process.env.REACT_APP_API_URL;
+const baseUrl = 'https://smedia-dashboard.herokuapp.com/api'; // Producción
+// const baseUrl = process.env.REACT_APP_API_URL; // Desarrollo
 
 const fetchInfoUsuarios = async(endPoint, data, method = 'GET') => {
 
